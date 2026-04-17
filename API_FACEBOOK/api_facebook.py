@@ -1,6 +1,6 @@
 from os import link
 from urllib import response
-
+import requests, json, uuid, re
 import requests, sys, json, time
 
 class FBGRAPHAPI:
@@ -66,7 +66,7 @@ class FBGRAPHAPI:
             sys.exit(0)
         except Exception as e:
             return False
-    def FB_REACTION(self,id, cx="LOVE"):
+    def FB_REACTION(self, id, cx="LOVE"):
         reaction_map = {
             'LOVE': '1678524932434102',
             'HAHA': '115940658764963',
@@ -80,74 +80,89 @@ class FBGRAPHAPI:
             headers_get = self.headers.copy()
             headers_get['cookie'] = self.cookie
             
-            response = requests.get(f'https://www.facebook.com/{id}', headers=headers_get).text
+            response_text = requests.get(
+                f'https://www.facebook.com/{id}', 
+                headers=headers_get
+            ).text
 
+            # Parse feedback_id
             try:
-                feedback_id = response.split('"feedback":{"id":"')[1].split('"')[0]
+                feedback_id = response_text.split('"feedback":{"id":"')[1].split('"')[0]
             except:
                 try:
-                    feedback_id = response.split('{"associated_group":null,"id":"')[1].split('"')[0]
+                    feedback_id = response_text.split('{"associated_group":null,"id":"')[1].split('"')[0]
                 except:
+                    print("Không parse được feedback_id")
                     return False
-            
+
+            # Parse lsd token
+            lsd_match = re.search(r'"LSD",\[\],\{"token":"([^"]+)"\}', response_text)
+            lsd_token = lsd_match.group(1) if lsd_match else ""
+
+            print(f"Feedback ID: {feedback_id} | LSD: {lsd_token}")
+
             headers_action = {
                 'accept': '*/*',
-                'accept-language': 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5',
+                'accept-language': 'vi-VN,vi;q=0.9',
                 'content-type': 'application/x-www-form-urlencoded',
                 'origin': 'https://www.facebook.com',
                 'referer': f'https://www.facebook.com/{id}',
-                'sec-ch-ua': '"Google Chrome";v="141", "Not?A_Brand";v="8", "Chromium";v="141"',
+                'sec-ch-ua': '"Google Chrome";v="141", "Not?A_Brand";v="8"',
                 'sec-ch-ua-mobile': '?0',
                 'sec-ch-ua-platform': '"Windows"',
                 'sec-fetch-dest': 'empty',
                 'sec-fetch-mode': 'cors',
                 'sec-fetch-site': 'same-origin',
-                'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36',
+                'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
                 'x-asbd-id': '359341',
                 'x-fb-friendly-name': 'CometUFIFeedbackReactMutation',
+                'x-fb-lsd': lsd_token,  # thêm
                 'cookie': self.cookie,
             }
-            
+
             variables = {
                 "input": {
-                    "attribution_id_v2": f"CometPhotoRoot.react,comet.post.single_dialog,via_cold_start,{int(time.time()*1000)},489084,,,",
+                    "attribution_id_v2": f"CometSinglePostDialogRoot.react,comet.post.single_dialog,via_cold_start,{int(time.time()*1000)},819514,,,",
                     "feedback_id": feedback_id,
                     "feedback_reaction_id": feedback_reaction_id,
                     "feedback_source": "OBJECT",
                     "is_tracking_encrypted": True,
                     "tracking": [""],
-                    "session_id": "",
+                    "session_id": str(uuid.uuid4()),
+                    "downstream_share_session_id": str(uuid.uuid4()),
+                    "downstream_share_session_origin_uri": f"https://www.facebook.com/{id}",
+                    "downstream_share_session_start_time": str(int(time.time() * 1000)),
                     "actor_id": self.av,
                     "client_mutation_id": "1"
                 },
                 "useDefaultActor": False,
                 "__relay_internal__pv__CometUFIReactionsEnableShortNamerelayprovider": False
             }
-            
+
             data = {
                 'av': self.av,
+                '__user': self.av,   # thêm
+                '__a': '1',          # thêm
                 'fb_dtsg': self.dtsg,
                 'jazoest': self.jazoest,
+                'lsd': lsd_token,    # thêm
                 'fb_api_caller_class': 'RelayModern',
                 'fb_api_req_friendly_name': 'CometUFIFeedbackReactMutation',
                 'server_timestamps': 'true',
                 'variables': json.dumps(variables),
-                'doc_id': '24198888476452283',
+                'doc_id': '34830500936594656',
             }
-            
+
             response = requests.post(
-                'https://www.facebook.com/api/graphql/', 
-                headers=headers_action, 
+                'https://www.facebook.com/api/graphql/',
+                headers=headers_action,
                 data=data
             )
-            
-            try:
-                result = response.json()
-                is_success = result.get('extensions', {}).get('is_final', False)
-                return is_success
-            except:
-                return False
-        except:
+            print(response.text)
+            result = response.json()
+            return result.get('extensions', {}).get('is_final', False)
+        except Exception as e:
+            print(f"Lỗi: {e}")
             return False
     def FB_LIKES(self,id):
         try:
@@ -245,6 +260,7 @@ class FBGRAPHAPI:
             return False
         
     def FB_RUN(self, type_task, id,cx= None, cmt=None):
+        print(f"Running task: {type_task} | ID: {id} | Reaction: {cx} | Comment: {cmt}")
         if type_task == "likepostvipcheo":
             self.FB_LIKES(id)
         elif type_task == "likepostvipre":

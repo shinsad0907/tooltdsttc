@@ -53,6 +53,7 @@ class RUN_TTC:
         self.tree_callback = callbacks.get('tree') if callbacks else None
         self.stats_callback = callbacks.get('stats') if callbacks else None
         self.lock = threading.Lock()
+        self.stop_flag = False  # Flag to stop execution
         
         # Global stats
         self.global_stats = {
@@ -70,6 +71,7 @@ class RUN_TTC:
             self.log_callback(log_msg)
     
     def _update_tree(self, ttc_user, status, xu):
+        print(f"Update tree: {ttc_user} | Status: {status} | Xu: {xu}")
         """Update tree item for account"""
         if self.tree_callback:
             self.tree_callback(ttc_user, status, xu)
@@ -101,6 +103,11 @@ class RUN_TTC:
             if task_status != "done":
                 return False
         return True
+    
+    def stop(self):
+        """Signal to stop execution"""
+        self.stop_flag = True
+        self._log("🛑 Người dùng yêu cầu dừng...")
     
     def status_run(self, ttc_user, task_type, account_total_xu):
         """Check task status, log delays, update tree - return (should_break, reason)"""
@@ -220,6 +227,14 @@ class RUN_TTC:
             account_tasks_error = 0
             
             while True:
+                # Check if stop flag is set
+                if self.stop_flag:
+                    self._log(f"└─ 🛑 Người dùng đã dừng, thoát acc {ttc_user}")
+                    self._update_tree(ttc_user, "🛑 Đã dừng", str(account_total_xu))
+                    self._log(f"==================== STOP: {ttc_user} ====================")
+                    self._log(f"📊 Tổng kết: Done={account_tasks_done}, Xu={account_total_xu}, Error={account_tasks_error}\n")
+                    return
+                
                 for task in self.data['tasks']:
                     self._log(f"┌─ Lấy jobs cho task: {task['display_name']} ({task['type_job']})")
                     

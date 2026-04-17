@@ -2495,8 +2495,9 @@ class TTCManagementPage(QWidget):
 class RunLogSignalEmitter(QObject):
     """Emit signals for logging from background threads - thread safe"""
     log_signal = pyqtSignal(str)
-    tree_signal = pyqtSignal(str, str, int)  # tds_user, status, xu (int)
+    tree_signal = pyqtSignal(str, str, str)  # user, status, xu (str)
     stats_signal = pyqtSignal(int, int, int)  # tasks_done, xu_earned, tasks_error
+    button_state_signal = pyqtSignal(str, bool)  # button_name, enabled (True/False)
 
 # ─────────────────────────────────────────────────────────────────────────────
 #  TTC RUN PAGE
@@ -2542,6 +2543,10 @@ class TTCRunPage(QWidget):
         
         # Create signal emitter for thread-safe logging
         self.log_emitter = RunLogSignalEmitter()
+        
+        # Runner references (for stop functionality)
+        self._ttc_runner = None
+        self._ttc_run_thread = None
 
         root_lay = QVBoxLayout(self); root_lay.setContentsMargins(20,16,20,16); root_lay.setSpacing(12)
 
@@ -2691,19 +2696,31 @@ class TTCRunPage(QWidget):
         # Connect signal emitter to log panel
         self.log_emitter.log_signal.connect(self._run_log_panel.append)
         self.log_emitter.tree_signal.connect(self._on_tree_update_signal)
+        self.log_emitter.button_state_signal.connect(self._on_button_state_changed)
         
         content_row.addWidget(log_wrap, 1)
         root_lay.addLayout(content_row, 1)
 
         # ── Action buttons ───────────────────────────────────────────────
         btn_lay = QHBoxLayout(); btn_lay.setSpacing(8)
-        for label, obj_name, slot in [
-            ("➕  Thêm TK vào danh sách", "btnPrimary", self._add_accounts_to_run),
-            ("▶  Bắt Đầu Chạy",          "btnSuccess", self._start_running),
-            ("🗑  Xóa Danh Sách",         "btnDanger",  self._clear_run_list),
+        self._btn_add_accounts = None
+        self._btn_start_run = None
+        self._btn_stop_run = None
+        self._btn_clear_list = None
+        
+        for label, obj_name, slot, var_name in [
+            ("➕  Thêm TK vào danh sách", "btnPrimary", self._add_accounts_to_run, "_btn_add_accounts"),
+            ("▶  Bắt Đầu Chạy",          "btnSuccess", self._start_running, "_btn_start_run"),
+            ("⏹  Dừng Chạy",             "btnDanger",  self._stop_running, "_btn_stop_run"),
+            ("🗑  Xóa Danh Sách",         "btnDanger",  self._clear_run_list, "_btn_clear_list"),
         ]:
             btn = QPushButton(label); btn.setObjectName(obj_name); btn.setMinimumHeight(36)
             btn.setCursor(QCursor(Qt.PointingHandCursor)); btn.clicked.connect(slot); btn_lay.addWidget(btn)
+            setattr(self, var_name, btn)
+        
+        # Initially disable stop button since nothing is running
+        self._btn_stop_run.setEnabled(False)
+        
         btn_lay.addStretch()
         root_lay.addLayout(btn_lay)
 
@@ -3548,6 +3565,12 @@ class TTCRunPage(QWidget):
                 self.tree_run.update()
                 break
 
+    def _on_button_state_changed(self, button_name, enabled):
+        """Slot handler to update button state from background thread"""
+        btn = getattr(self, button_name, None)
+        if btn:
+            btn.setEnabled(enabled)
+
     def _make_run_item(self, ttc_user, ttc_pass, ttc_token,
                        fb_uid, fb_cookie, fb_proxy, fb_token, row_idx=0):
         """Tạo QTreeWidgetItem cho tree_run"""
@@ -3693,6 +3716,7 @@ class TTCRunPage(QWidget):
         
         def tree_callback(ttc_user, status, xu):
             """Callback để update treeview - thread safe"""
+            print(f"[DEBUG] Tree callback received - User: {ttc_user}, Status: {status}, Xu: {xu}")
             self.log_emitter.tree_signal.emit(ttc_user, status, xu)
         
         def stats_callback(tasks_done, xu_earned, tasks_error):
@@ -3706,18 +3730,46 @@ class TTCRunPage(QWidget):
             'tree': tree_callback,
             'stats': stats_callback
         })
+        self._ttc_runner = runner  # Store reference for stop functionality
         
         task_names = [t.get("type_job", "") for t in tasks_data]
         self._run_log_panel.append(f"[START] Chạy {len(task_names)} nhiệm vụ: {', '.join(task_names)}")
         self._run_log_panel.append(f"[INFO] Delay: {self._run_settings['delay_short']}s–{self._run_settings['delay_long']}s | Dừng sau: {self._run_settings['stop_after_tasks']} task")
         self._run_log_panel.append(f"[ACCOUNTS] Đã select {len(accounts)} tài khoản để chạy")
         
+        # Disable Start button, enable Stop button (via signal for thread safety)
+        self.log_emitter.button_state_signal.emit("_btn_start_run", False)
+        self.log_emitter.button_state_signal.emit("_btn_stop_run", True)
+        
+        # Wrapper function to run and then re-enable buttons
+        def run_with_cleanup():
+            try:
+                runner.main()
+            finally:
+                # Re-enable Start button when done (via signal for thread safety)
+                self.log_emitter.button_state_signal.emit("_btn_start_run", True)
+                self.log_emitter.button_state_signal.emit("_btn_stop_run", False)
+                self._run_log_panel.append("[END] Quá trình chạy kết thúc")
+        
         # Chạy runner trong thread riêng để không lag UI
         import threading
-        run_thread = threading.Thread(target=runner.main, daemon=True)
+        run_thread = threading.Thread(target=run_with_cleanup, daemon=True)
+        self._ttc_run_thread = run_thread  # Store reference for potential cleanup
         run_thread.start()
         
         QMessageBox.information(self, "Thông báo", f"Cấu hình OK — {len(task_names)} nhiệm vụ với {len(accounts)} tài khoản được chọn")
+
+    def _stop_running(self):
+        """Stop the running TTC process"""
+        if not self._ttc_runner:
+            QMessageBox.warning(self, "Lỗi", "Chưa có quá trình chạy nào!")
+            return
+        
+        self._run_log_panel.append("[STOP] Yêu cầu dừng chương trình...")
+        self._ttc_runner.stop()
+        
+        # Disable stop button (will be re-enabled by wrapper when thread finishes)
+        self.log_emitter.button_state_signal.emit("_btn_stop_run", False)
 
     def _clear_run_list(self):
         self.tree_run.clear()
@@ -3757,6 +3809,10 @@ class TDSRunPage(QWidget):
         
         self._load_profiles_from_file()
         self.log_emitter = RunLogSignalEmitter()
+        
+        # Runner references (for stop functionality)
+        self._tds_runner = None
+        self._tds_run_thread = None
         
         root_lay = QVBoxLayout(self)
         root_lay.setContentsMargins(20, 16, 20, 16)
@@ -3853,19 +3909,30 @@ class TDSRunPage(QWidget):
         log_lay.addWidget(self._run_log_panel, 1)
         self.log_emitter.log_signal.connect(self._run_log_panel.append)
         self.log_emitter.tree_signal.connect(self._on_tree_update_signal)
+        self.log_emitter.button_state_signal.connect(self._on_button_state_changed)
         content_row.addWidget(log_wrap, 1)
         root_lay.addLayout(content_row, 1)
 
         # Action buttons
         btn_lay = QHBoxLayout(); btn_lay.setSpacing(8)
-        for label, obj_name, slot in [
-            ("➕  Thêm TK vào danh sách", "btnPrimary", self._add_accounts_to_run),
-            ("▶  Bắt Đầu Chạy",          "btnSuccess", self._start_running),
-            ("🗑  Xóa Danh Sách",         "btnDanger",  self._clear_run_list),
+        self._tds_btn_add_accounts = None
+        self._tds_btn_start_run = None
+        self._tds_btn_stop_run = None
+        self._tds_btn_clear_list = None
+        
+        for label, obj_name, slot, var_name in [
+            ("➕  Thêm TK vào danh sách", "btnPrimary", self._add_accounts_to_run, "_tds_btn_add_accounts"),
+            ("▶  Bắt Đầu Chạy",          "btnSuccess", self._start_running, "_tds_btn_start_run"),
+            ("⏹  Dừng Chạy",             "btnDanger",  self._stop_running, "_tds_btn_stop_run"),
+            ("🗑  Xóa Danh Sách",         "btnDanger",  self._clear_run_list, "_tds_btn_clear_list"),
         ]:
             btn = QPushButton(label); btn.setObjectName(obj_name); btn.setMinimumHeight(36)
-            btn.setCursor(QCursor(Qt.PointingHandCursor)); btn.clicked.connect(slot)
-            btn_lay.addWidget(btn)
+            btn.setCursor(QCursor(Qt.PointingHandCursor)); btn.clicked.connect(slot); btn_lay.addWidget(btn)
+            setattr(self, var_name, btn)
+        
+        # Initially disable stop button since nothing is running
+        self._tds_btn_stop_run.setEnabled(False)
+        
         btn_lay.addStretch()
         root_lay.addLayout(btn_lay)
 
@@ -4538,6 +4605,12 @@ class TDSRunPage(QWidget):
                 self.tree_run.resizeColumnToContents(9)
                 break
 
+    def _on_button_state_changed(self, button_name, enabled):
+        """Slot handler to update button state from background thread"""
+        btn = getattr(self, button_name, None)
+        if btn:
+            btn.setEnabled(enabled)
+
     def _add_tds_from_context(self):
         """Thêm nhiều TDS account từ context menu."""
         dlg = QDialog(self); dlg.setWindowTitle("➕ Thêm Tài Khoản TDS")
@@ -4780,17 +4853,46 @@ class TDSRunPage(QWidget):
             'tree':  tree_callback,
             'stats': stats_callback
         })
+        self._tds_runner = runner  # Store reference for stop functionality
 
         task_names = [t.get("type_job","") for t in tasks_data]
         self._run_log_panel.append(f"[START] Chạy {len(task_names)} nhiệm vụ: {', '.join(task_names)}")
         self._run_log_panel.append(f"[INFO] Delay: {self._run_settings['delay_short']}s–{self._run_settings['delay_long']}s | Dừng sau: {self._run_settings['stop_after_tasks']} task")
         self._run_log_panel.append(f"[ACCOUNTS] Đã select {len(accounts)} tài khoản")
 
+        # Disable Start button, enable Stop button (via signal for thread safety)
+        self.log_emitter.button_state_signal.emit("_tds_btn_start_run", False)
+        self.log_emitter.button_state_signal.emit("_tds_btn_stop_run", True)
+        
+        # Wrapper function to run and then re-enable buttons
+        def run_with_cleanup():
+            try:
+                runner.main()
+            finally:
+                # Re-enable Start button when done (via signal for thread safety)
+                self.log_emitter.button_state_signal.emit("_tds_btn_start_run", True)
+                self.log_emitter.button_state_signal.emit("_tds_btn_stop_run", False)
+                self._run_log_panel.append("[END] Quá trình chạy kết thúc")
+
         import threading
-        run_thread = threading.Thread(target=runner.main, daemon=True)
+        run_thread = threading.Thread(target=run_with_cleanup, daemon=True)
+        self._tds_run_thread = run_thread  # Store reference for potential cleanup
         run_thread.start()
 
         QMessageBox.information(self, "Thông báo", f"Cấu hình OK — {len(task_names)} nhiệm vụ với {len(accounts)} tài khoản")
+    
+    def _stop_running(self):
+        """Stop the running TDS process"""
+        if not self._tds_runner:
+            QMessageBox.warning(self, "Lỗi", "Chưa có quá trình chạy nào!")
+            return
+        
+        self._run_log_panel.append("[STOP] Yêu cầu dừng chương trình...")
+        self._tds_runner.stop()
+        
+        # Disable stop button (via signal for thread safety)
+        self.log_emitter.button_state_signal.emit("_tds_btn_stop_run", False)
+
     def _clear_run_list(self):
         self.tree_run.clear()
 
