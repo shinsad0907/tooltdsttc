@@ -1,0 +1,71 @@
+{
+  "settings": {
+    "api_key": "f",
+    "delay_short": 5,
+    "delay_long": 60,
+    "delay_after_tasks": 5,
+    "stop_after_tasks": 100
+  },
+  "tasks": [
+    {
+      "type_job": "likepostvipcheo",
+      "display_name": "Like VIP",
+      "delay_min": 5,
+      "delay_max": 60,
+      "count": 1
+    },
+    {
+      "type_job": "likepostvipre",
+      "display_name": "Like Thường",
+      "delay_min": 5,
+      "delay_max": 60,
+      "count": 1
+    },
+    {
+      "type_job": "camxucvipcheo",
+      "display_name": "Cảm Xúc VIP",
+      "delay_min": 3,
+      "delay_max": 60,
+      "count": 1
+    },
+    {
+      "type_job": "camxucvipre",
+      "display_name": "Cảm Xúc Thường",
+      "delay_min": 5,
+      "delay_max": 60,
+      "count": 1
+    },
+    {
+      "type_job": "cmtcheo",
+      "display_name": "Bình Luận",
+      "delay_min": 7,
+      "delay_max": 119,
+      "count": 5
+    },
+    {
+      "type_job": "subcheo",
+      "display_name": "Theo Dõi",
+      "delay_min": 4,
+      "delay_max": 60,
+      "count": 1
+    },
+    {
+      "type_job": "sharecheo",
+      "display_name": "Share",
+      "delay_min": 10,
+      "delay_max": 10,
+      "count": 1
+    }
+  ],
+  "accounts": [
+    {
+      "ttc_user": "icU079wpqb",
+      "ttc_pass": "MkzKNLSLPhSF",
+      "ttc_token": "63e5755450580b836328b05e3967e61b",
+      "fb_uid": "61588475505251",
+      "fb_cookie": "c_user=100021414726092; xs=29:Zs7S8iM9EJud_g:2:1776354619:-1:-1; fr=0kt2DXJaaYoyVE0Mn.AWdxnG-pGWRVCrWtPjmLrbuQnC3xmfFZxc3-mMLp8qfBVRv3UJU.Bp4QU7..AAA.0.0.Bp4QU7.AWceR8mZPSkp7u455DaJ1USrhOA; datr=OwXhabVT83AkiKzaOatNlbY6;ps_l=1;ps_n=1;wd=1920x919;i_user=61588475505251;",
+      "fb_proxy": "",
+      "fb_token": "EAAD6V7os0gcBRJIfWj0aPtfdvgH35oDZApxb1H3Tz4jcsA343nV0Gjxjl7uqSfkUf7WJBwUc3ZBdu3lJzZCmDRAIbQpYNcT4nscPaGk6wsds1U30JN8Ohh0tBRY1O3rc74wkCmVaasCw2l812ti9DLtASrC0ZBeZCNWGWeTKVT50GFtbbdFnMZBk7SyptJoYGnjm9U7wQPBNTJAL5cz1gkCJpbZBAZDZD"
+    }
+  ]
+}

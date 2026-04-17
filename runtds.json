@@ -1,0 +1,29 @@
+{
+  "settings": {
+    "api_key": "sdf",
+    "delay_short": 5,
+    "delay_long": 60,
+    "delay_after_tasks": 5,
+    "stop_after_tasks": 100
+  },
+  "tasks": [
+    {
+      "type_job": "likepostvipcheo",
+      "display_name": "Like VIP",
+      "delay_min": 1,
+      "delay_max": 1,
+      "count": 1
+    }
+  ],
+  "accounts": [
+    {
+      "tds_user": "ngEdzjx0Ne",
+      "tds_pass": "4NFUXsZWI21c",
+      "tds_token": "TDS0nI0IXZ2V2ciojIyVmdlNnIsISZOBDeqpHZFdmbiojIyV2c1Jye",
+      "fb_uid": "100002785140483",
+      "fb_cookie": "c_user=100002785140483; xs=15:qCAK7fDRlZ0hqA:2:1775476766:-1:-1; fr=0NeiIsaevnHkfU5HG.AWdu6WM5un_--l7ISW8VFRQnWlfAzsfn-hu224p7YDDC8CPtUNA.Bp06Ad..AAA.0.0.Bp06Ad.AWfjZvD_ac0PKIbGiyaV47VC0DI; datr=HaDTaSc-7O_v8LtAhssX95QG",
+      "fb_proxy": "",
+      "fb_token": "EAAD6V7os0gcBRBfZBd2FswZAFkZCllAsoJFyzm1JuTl2fvIygoZCM6lWW8R5N81GtQgd51jFCn374ADbGZBXjsDZCqzQGUx2WpRZAZCXHZC9t7r0PJ1s5sCfsNY9DXQTcsv7e0LfZCOpnBaO3VPqdcKKZAY576Wuejup8KpIoh03geKDcDeMla5mnVZBMOmbJfK8ZASWGP1NisGcutgZDZD"
+    }
+  ]
+}

@@ -1,0 +1,886 @@
+{
+  "Default": {
+    "api_key": "",
+    "delay_short": 5,
+    "delay_long": 60,
+    "delay_after_tasks": 5,
+    "stop_after_tasks": 100,
+    "tasks": [
+      "Like VIP",
+      "Like Thường",
+      "Cảm Xúc VIP",
+      "Cảm Xúc Thường",
+      "Cảm Xúc Bình Luận",
+      "Bình Luận",
+      "Theo Dõi",
+      "Theo Dõi VIP",
+      "Share",
+      "Share Kèm Nội Dung",
+      "Like Page",
+      "Tham Gia Nhóm",
+      "Đánh Giá Page"
+    ],
+    "task_settings": {
+      "Like VIP": {
+        "enabled": true,
+        "delay_min": 5,
+        "delay_max": 60,
+        "count": 1
+      },
+      "Like Thường": {
+        "enabled": true,
+        "delay_min": 5,
+        "delay_max": 60,
+        "count": 1
+      },
+      "Cảm Xúc VIP": {
+        "enabled": true,
+        "delay_min": 5,
+        "delay_max": 60,
+        "count": 1
+      },
+      "Cảm Xúc Thường": {
+        "enabled": true,
+        "delay_min": 5,
+        "delay_max": 60,
+        "count": 1
+      },
+      "Cảm Xúc Bình Luận": {
+        "enabled": true,
+        "delay_min": 5,
+        "delay_max": 60,
+        "count": 1
+      },
+      "Bình Luận": {
+        "enabled": true,
+        "delay_min": 10,
+        "delay_max": 120,
+        "count": 5
+      },
+      "Theo Dõi": {
+        "enabled": true,
+        "delay_min": 5,
+        "delay_max": 60,
+        "count": 1
+      },
+      "Theo Dõi VIP": {
+        "enabled": true,
+        "delay_min": 5,
+        "delay_max": 60,
+        "count": 1
+      },
+      "Share": {
+        "enabled": true,
+        "delay_min": 10,
+        "delay_max": 120,
+        "count": 1
+      },
+      "Share Kèm Nội Dung": {
+        "enabled": true,
+        "delay_min": 15,
+        "delay_max": 180,
+        "count": 1
+      },
+      "Like Page": {
+        "enabled": true,
+        "delay_min": 5,
+        "delay_max": 60,
+        "count": 1
+      },
+      "Tham Gia Nhóm": {
+        "enabled": true,
+        "delay_min": 14,
+        "delay_max": 120,
+        "count": 1
+      },
+      "Đánh Giá Page": {
+        "enabled": true,
+        "delay_min": 10,
+        "delay_max": 120,
+        "count": 1
+      }
+    },
+    "accounts": [
+      {
+        "fb_cookie": "",
+        "fb_proxy": "",
+        "fb_token": "",
+        "fb_uid": "",
+        "ttc_pass": "MkzKNLSLPhSF",
+        "ttc_token": "63e5755450580b836328b05e3967e61b",
+        "ttc_user": "icU079wpqb"
+      }
+    ]
+  },
+  "sdf": {
+    "api_key": "",
+    "delay_short": 5,
+    "delay_long": 60,
+    "delay_after_tasks": 5,
+    "stop_after_tasks": 100,
+    "tasks": [],
+    "task_settings": {
+      "Like VIP": {
+        "enabled": false,
+        "delay_min": 5,
+        "delay_max": 60,
+        "count": 1
+      },
+      "Like Thường": {
+        "enabled": false,
+        "delay_min": 5,
+        "delay_max": 60,
+        "count": 1
+      },
+      "Cảm Xúc VIP": {
+        "enabled": false,
+        "delay_min": 5,
+        "delay_max": 60,
+        "count": 1
+      },
+      "Cảm Xúc Thường": {
+        "enabled": false,
+        "delay_min": 5,
+        "delay_max": 60,
+        "count": 1
+      },
+      "Cảm Xúc Bình Luận": {
+        "enabled": false,
+        "delay_min": 5,
+        "delay_max": 60,
+        "count": 1
+      },
+      "Bình Luận": {
+        "enabled": false,
+        "delay_min": 10,
+        "delay_max": 120,
+        "count": 5
+      },
+      "Theo Dõi": {
+        "enabled": false,
+        "delay_min": 5,
+        "delay_max": 60,
+        "count": 1
+      },
+      "Theo Dõi VIP": {
+        "enabled": false,
+        "delay_min": 5,
+        "delay_max": 60,
+        "count": 1
+      },
+      "Share": {
+        "enabled": false,
+        "delay_min": 10,
+        "delay_max": 120,
+        "count": 1
+      },
+      "Share Kèm Nội Dung": {
+        "enabled": false,
+        "delay_min": 15,
+        "delay_max": 180,
+        "count": 1
+      },
+      "Like Page": {
+        "enabled": false,
+        "delay_min": 5,
+        "delay_max": 60,
+        "count": 1
+      },
+      "Tham Gia Nhóm": {
+        "enabled": false,
+        "delay_min": 10,
+        "delay_max": 120,
+        "count": 1
+      },
+      "Đánh Giá Page": {
+        "enabled": false,
+        "delay_min": 10,
+        "delay_max": 120,
+        "count": 1
+      }
+    }
+  },
+  "sdfsd": {
+    "api_key": "ff",
+    "delay_short": 5,
+    "delay_long": 60,
+    "delay_after_tasks": 5,
+    "stop_after_tasks": 100,
+    "tasks": [
+      "Like VIP",
+      "Like Thường"
+    ],
+    "task_settings": {
+      "Like VIP": {
+        "enabled": true,
+        "delay_min": 5,
+        "delay_max": 60,
+        "count": 1
+      },
+      "Like Thường": {
+        "enabled": true,
+        "delay_min": 5,
+        "delay_max": 60,
+        "count": 1
+      },
+      "Cảm Xúc VIP": {
+        "enabled": false,
+        "delay_min": 5,
+        "delay_max": 60,
+        "count": 1
+      },
+      "Cảm Xúc Thường": {
+        "enabled": false,
+        "delay_min": 5,
+        "delay_max": 60,
+        "count": 1
+      },
+      "Bình Luận": {
+        "enabled": false,
+        "delay_min": 10,
+        "delay_max": 120,
+        "count": 5
+      },
+      "Theo Dõi": {
+        "enabled": false,
+        "delay_min": 5,
+        "delay_max": 60,
+        "count": 1
+      },
+      "Theo Dõi VIP": {
+        "enabled": false,
+        "delay_min": 5,
+        "delay_max": 60,
+        "count": 1
+      },
+      "Share": {
+        "enabled": false,
+        "delay_min": 10,
+        "delay_max": 120,
+        "count": 1
+      }
+    },
+    "accounts": [
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100004077247656",
+        "fb_cookie": "abc123@@@",
+        "fb_proxy": "OY4I JQS6 PUYT OM6P 7QLA UA3S 3QDP HF6A",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100021414726092",
+        "fb_cookie": "abc123@@@@@",
+        "fb_proxy": "P45S TQFL SDPX Z3TC X6B6 UX2Q MDTS ZMTF",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100002279916503",
+        "fb_cookie": "matkhaune123@",
+        "fb_proxy": "OIO6 YGRB GZU5 JO4E IWK6 SXGP N2HN C3UP",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100004729813526",
+        "fb_cookie": "abc123@@@@",
+        "fb_proxy": "OORW 5BIY 7OC3 4M7X JDTE 6JY5 CK3C TUNT",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100002537892794",
+        "fb_cookie": "abc123@@@@@",
+        "fb_proxy": "PAKI TCJ7 TMU5 H7PK IOMD Q6VY 5BWL AC3P",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100004602331729",
+        "fb_cookie": "abc123@@@",
+        "fb_proxy": "OKCF S6KB WUAN L3MI KWO3 LXP6 WFVR HKEU",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100015518949822",
+        "fb_cookie": "matkhaune123@",
+        "fb_proxy": "OQMQ GLU7 SU3L YCH3 YRHC OQGD QB7Y PRSQ",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100003749322989",
+        "fb_cookie": "abc123@@@@@",
+        "fb_proxy": "P4BQ Q7LR GJR4 3LED YXYL K33E TIO5 2VPB",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100006366636864",
+        "fb_cookie": "abc123@@",
+        "fb_proxy": "P6AP RCOF EBEL Z7QN 5A2U XAFQ BFF4 AD5K",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100001167127047",
+        "fb_cookie": "matkhaune123@",
+        "fb_proxy": "ONV2 6QOU 7XL6 F7HW G563 3OCD 5QAN ZQXV",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "",
+        "fb_cookie": "",
+        "fb_proxy": "",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100004592325553",
+        "fb_cookie": "abc123@@@",
+        "fb_proxy": "D24S35QOO3LOC726PZRVGLFJORSLLKP5",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100003822692509",
+        "fb_cookie": "abc123@@a",
+        "fb_proxy": "6QWI SZ3Q 7SYM KMOZ LL55 PSFO CDNV 6XKT",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100031227619297",
+        "fb_cookie": "datngu123@",
+        "fb_proxy": "3FYU QCL4 U53Q YZXU 25SL R6BK IAO5 U5WP",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100001557650092",
+        "fb_cookie": "datngu123@",
+        "fb_proxy": "6NFU UMDJ LZOC HF2Z PQG5 P5ID N7VJ NL3A",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100002313142112",
+        "fb_cookie": "datngu123@",
+        "fb_proxy": "FPO2 S2PZ TNCC JUOB FLVM OHE5 M2NG S5TY",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100002785140483",
+        "fb_cookie": "datngu123@@",
+        "fb_proxy": "POQC FV3P SGCN R22A 3ROY XR6F YOGE J2W4",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100001129978769",
+        "fb_cookie": "abc123@@",
+        "fb_proxy": "GZWB XMPB GWWL 5RHS T3PL K7KD CYLC DYCC",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100002453876691",
+        "fb_cookie": "datngu123@@",
+        "fb_proxy": "7XAM 5DYF MKDO OPOR H3PB X5LI YQQ4 FHYD",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100023046907248",
+        "fb_cookie": "datngu123@@",
+        "fb_proxy": "ALCX 6RPW QBQG MOUN IHKE N42S TJYS SXZT",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100001333692832",
+        "fb_cookie": "datngu123@@",
+        "fb_proxy": "BQ3O SBJX VX33 W3TY ZXWP 74YB O4XS 5EL4",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100006067339257",
+        "fb_cookie": "datngu123@@",
+        "fb_proxy": "C6CK VEDX HCFH 3AGC D7LD 37JN EA2M 67TD",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100003395826327",
+        "fb_cookie": "datngu123@@",
+        "fb_proxy": "EJYU 5IWX AWKZ QMFD UBIS I2I7 ATEN CN7R",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100000661839762",
+        "fb_cookie": "datngu123@@",
+        "fb_proxy": "CKUZ MM32 YXJI PXSS LKX6 XD2P P6FO R34I",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100002829292385",
+        "fb_cookie": "datngu123@@",
+        "fb_proxy": "D6BW ORL7 NWKY MZOY CAML 2ORF CC5Z 7E6X",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100001468726401",
+        "fb_cookie": "datngu123@@",
+        "fb_proxy": "AMU3 GZOH GEJQ QBZU KFRK DEX4 S54L 7UGS",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100001224612044",
+        "fb_cookie": "datngu123@@",
+        "fb_proxy": "ETVV MOH2 EKLI FXDR AFZ2 2UOI JLOW VYN4",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100002460002845",
+        "fb_cookie": "datngu123@@",
+        "fb_proxy": "CFVW CRMA QWIH HKPC HHGT UCHD AI3Z OO3X",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100001500282724",
+        "fb_cookie": "datngu123@@",
+        "fb_proxy": "FMSN J5DV QSAS VJIM 3C4V 7IP7 2FJZ 443K",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100002122703300",
+        "fb_cookie": "datngu123@@",
+        "fb_proxy": "HG3P IW5U VWPW XYTI QR3G 2FNC 4ABU 44WJ",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100009417577259",
+        "fb_cookie": "datngu123@@",
+        "fb_proxy": "OCIS T4IA M3D7 LRYQ 4KRA BZMB AUBV QH7Y",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100007311918639",
+        "fb_cookie": "datngu123@@",
+        "fb_proxy": "PFTQ G2BV MF4H KJEA QQPA SY3L S3CG O5HT",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100003845611210",
+        "fb_cookie": "datngu123@@",
+        "fb_proxy": "US7F 2QSL OAP6 IUYJ KPXR 77NZ UOCQ HNZT",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100000779497232",
+        "fb_cookie": "datngu123@@",
+        "fb_proxy": "X5D5 V6MG UT3Z 3WAD NXDN GWUZ 26DZ 2T3N",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100003029272154",
+        "fb_cookie": "datngu123@@",
+        "fb_proxy": "5X4Z ZIDB MG5E IUMH 5NTK OOSA ZTF3 7RFY",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100000982814678",
+        "fb_cookie": "datngu123@",
+        "fb_proxy": "FONS BRAE XLZF 6WG6 QTJD WFJK T53L 4KGT",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100005649934250",
+        "fb_cookie": "datngu123@@",
+        "fb_proxy": "G434 VGYI VCE6 BIUO XATR 7X7X HU6G NHA5",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100000529701586",
+        "fb_cookie": "ngudat123@@",
+        "fb_proxy": "IEQJ LXSX CXNF U74L YXNZ XHZJ JP53 LX5Z",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100000234245494",
+        "fb_cookie": "datngu153@@",
+        "fb_proxy": "2RBW I2TJ LVZS LXOO ZC6W T3OL WRFV FOWW",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100010059073917",
+        "fb_cookie": "datngu123@@",
+        "fb_proxy": "MMMK 5H6E 6IPG O7OX ENWZ 7CX2 NYEH DUWJ",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100000714097906",
+        "fb_cookie": "datngu123@",
+        "fb_proxy": "2GK2 XANE JDDN 7TNQ D5IK 7VNC VQTD Y2CX",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100005375892537",
+        "fb_cookie": "datngu123@",
+        "fb_proxy": "4H5D OTZC AUZY QFBM 6QWV GX3D B7QN 4O5A",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100005909382510",
+        "fb_cookie": "matkhaune123@@",
+        "fb_proxy": "DCH7 RREI XC6P R67B 7EKP PC63 NNRB KAXR",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100008821053129",
+        "fb_cookie": "abc123@@",
+        "fb_proxy": "7E2P ALTB 47OZ 56X6 C3KW MNES SQJB MWGJ",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100005469436238",
+        "fb_cookie": "abc123@@@",
+        "fb_proxy": "BNVE ZXTI ECY4 FJZM JO5R SYWD B32E Z7QC",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100001616072000",
+        "fb_cookie": "abc123@@@",
+        "fb_proxy": "NHSJ KWSZ GUAJ YFL2 LQTX IBDD 2PPN QMUH",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100000713730212",
+        "fb_cookie": "abc123@@",
+        "fb_proxy": "QUHN CP64 WCSR SQFO ZJOZ M2K6 BFLQ SZOC",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100000163886076",
+        "fb_cookie": "abc123@@",
+        "fb_proxy": "KA3P Z2DG VP5U 4GUZ XTXL RNKH BFQ5 QPIJ",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100024279182353",
+        "fb_cookie": "abc123@@",
+        "fb_proxy": "LREF M6VM YHBG CJCU HKXI OL6G UM6C CAW5",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100016639684382",
+        "fb_cookie": "abc123@@",
+        "fb_proxy": "VCU2 YQOB JMCP O6RF GMIE JXZQ YJVA 5QH4",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100007325254164",
+        "fb_cookie": "abc123@@",
+        "fb_proxy": "WEY7 RF7G MZES KYV4 5YEP 4VN4 NRLF TSCW",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100028603331994",
+        "fb_cookie": "abc123@@",
+        "fb_proxy": "ZMGM 7OEU H7FK FQFX TELK 3NJ7 6A2Z KITM",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100024741633510",
+        "fb_cookie": "abc123@@",
+        "fb_proxy": "2Z6X FBGW HXPL BLA7 EQNP SS4R 2B7Y 5NGT",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100000452302167",
+        "fb_cookie": "datbede@@",
+        "fb_proxy": "KGPO VYUK GBVH CSEU YIM4 H7PQ VLMO XBW6",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100001829409145",
+        "fb_cookie": "datngu123@@",
+        "fb_proxy": "347A VBJ4 SY5Z BFGN P2LI TTQM DJKV Q44I",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100002580603404",
+        "fb_cookie": "datngu123@",
+        "fb_proxy": "WWEI ZF5T UH7M DTXP T4BN E5DE 6AHI ZKFO",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100007750099260",
+        "fb_cookie": "datngu123@",
+        "fb_proxy": "YEBF HPQV TPWI 2WJN WQ33 RKG3 T4ZQ EITU",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100000853837947",
+        "fb_cookie": "datngu123@",
+        "fb_proxy": "YFE4 OXDI 3NUJ BQ62 QYL5 U3DX G236 AMUY",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100002029258922",
+        "fb_cookie": "datbede@@",
+        "fb_proxy": "5JCX VIIR V6YT RGRI TCVP 2LXW 2ZRB 3ZB3",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100003813121830",
+        "fb_cookie": "datngu123@@",
+        "fb_proxy": "7BCK MQAL 3WXJ G6HW RVCW YJZM P3T5 EJZF",
+        "fb_token": ""
+      },
+      {
+        "ttc_user": "(chưa có TTC)",
+        "ttc_pass": "",
+        "ttc_token": "",
+        "fb_uid": "100002935698534",
+        "fb_cookie": "datngu123@@",
+        "fb_proxy": "7CI4 DOXE 2KIL HLEE EQZM 3S24 BWT2 ZR57",
+        "fb_token": ""
+      }
+    ]
+  },
+  "shin": {
+    "api_key": "f",
+    "delay_short": 5,
+    "delay_long": 60,
+    "delay_after_tasks": 5,
+    "stop_after_tasks": 100,
+    "tasks": [
+      "Like VIP",
+      "Like Thường",
+      "Cảm Xúc VIP",
+      "Cảm Xúc Thường",
+      "Bình Luận",
+      "Theo Dõi",
+      "Share"
+    ],
+    "task_settings": {
+      "Like VIP": {
+        "enabled": true,
+        "delay_min": 5,
+        "delay_max": 60,
+        "count": 1
+      },
+      "Like Thường": {
+        "enabled": true,
+        "delay_min": 5,
+        "delay_max": 60,
+        "count": 1
+      },
+      "Cảm Xúc VIP": {
+        "enabled": true,
+        "delay_min": 3,
+        "delay_max": 60,
+        "count": 1
+      },
+      "Cảm Xúc Thường": {
+        "enabled": true,
+        "delay_min": 5,
+        "delay_max": 60,
+        "count": 1
+      },
+      "Bình Luận": {
+        "enabled": true,
+        "delay_min": 7,
+        "delay_max": 119,
+        "count": 5
+      },
+      "Theo Dõi": {
+        "enabled": true,
+        "delay_min": 4,
+        "delay_max": 60,
+        "count": 1
+      },
+      "Share": {
+        "enabled": true,
+        "delay_min": 10,
+        "delay_max": 10,
+        "count": 1
+      }
+    },
+    "accounts": [
+      {
+        "fb_cookie": "c_user=100021414726092; xs=29:Zs7S8iM9EJud_g:2:1776354619:-1:-1; fr=0kt2DXJaaYoyVE0Mn.AWdxnG-pGWRVCrWtPjmLrbuQnC3xmfFZxc3-mMLp8qfBVRv3UJU.Bp4QU7..AAA.0.0.Bp4QU7.AWceR8mZPSkp7u455DaJ1USrhOA; datr=OwXhabVT83AkiKzaOatNlbY6;ps_l=1;ps_n=1;wd=1920x919;i_user=61588475505251;",
+        "fb_proxy": "",
+        "fb_token": "EAAD6V7os0gcBRJIfWj0aPtfdvgH35oDZApxb1H3Tz4jcsA343nV0Gjxjl7uqSfkUf7WJBwUc3ZBdu3lJzZCmDRAIbQpYNcT4nscPaGk6wsds1U30JN8Ohh0tBRY1O3rc74wkCmVaasCw2l812ti9DLtASrC0ZBeZCNWGWeTKVT50GFtbbdFnMZBk7SyptJoYGnjm9U7wQPBNTJAL5cz1gkCJpbZBAZDZD",
+        "fb_uid": "61588475505251",
+        "ttc_pass": "MkzKNLSLPhSF",
+        "ttc_token": "63e5755450580b836328b05e3967e61b",
+        "ttc_user": "icU079wpqb"
+      }
+    ]
+  }
+}

@@ -1,0 +1,468 @@
+{
+  "groups": {
+    "Default": {
+      "accounts": [
+        "100038524891021",
+        "100091234567890"
+      ]
+    },
+    "sdfsd": {
+      "accounts": [
+        "100004592325553",
+        "100003822692509",
+        "220271546197819"
+      ]
+    },
+    "dd": {
+      "accounts": []
+    },
+    "bao": {
+      "accounts": [
+        "100009614193964"
+      ]
+    },
+    "shin": {
+      "accounts": [
+        "100021414726092",
+        "100002785140483",
+        "100002453876691",
+        "100023046907248",
+        "100002829292385",
+        "100002122703300",
+        "100005649934250",
+        "100005375892537",
+        "100001829409145",
+        "100003813121830"
+      ]
+    }
+  },
+  "accounts": {
+    "100038524891021": {
+      "mail": "quynh.danh@gmail.com",
+      "pass": "pass456",
+      "2fa": "",
+      "name": "Hoàng Quỳnh Danh",
+      "uid": "100038524891021",
+      "letter": "Q",
+      "token": "EAA4ntg5ovrZAAA7e5xsh5h09y9ifln02v9Bx4xZBbeiqtjqtxz",
+      "cookie": "sb=9154vddv; xs=7y5g7b7pq1k9ijw6monqul0k; c_user=779252387975318; fr=x41xxhnbrr49noekb8tnp4ln5i51zu",
+      "status": "✔ Active",
+      "status_color": "#10b981",
+      "pages": [
+        {
+          "name": "QD Store",
+          "uid": "1029384756",
+          "token": "EAAau3jfn9bZAAApaq3zomzesli9d5t43x8Bx4xZB47h283exak",
+          "cookie": "sb=hgu0obtc; xs=vukawcg47mqhoijd0m2ntwac; c_user=389084599292320; fr=e8y2f9c9ghqaapxkvh175370m8ells",
+          "role": "ADMIN",
+          "fans": 8800
+        },
+        {
+          "uid": "1774413420970_0",
+          "name": "Trang Page,Trang Fan Page,Trang Business",
+          "bio": "Chào mừng bạn,Welcome to my page,Cảm ơn bạn đã theo dõi",
+          "token": "",
+          "cookie": "",
+          "avatar": "",
+          "proxy": "dsfdsf:212",
+          "role": "ADMIN",
+          "fans": 0
+        },
+        {
+          "uid": "1774420402637_0",
+          "name": "Trang Page,Trang Fan Page,Trang Business",
+          "bio": "Chào mừng bạn,Welcome to my page,Cảm ơn bạn đã theo dõi",
+          "token": "",
+          "cookie": "",
+          "avatar": "",
+          "proxy": "dsfdsf:212",
+          "role": "ADMIN",
+          "fans": 0
+        },
+        {
+          "uid": "1774437633387_0",
+          "name": "Trang Page,Trang Fan Page,Trang Business",
+          "bio": "Chào mừng bạn,Welcome to my page,Cảm ơn bạn đã theo dõi",
+          "token": "",
+          "cookie": "",
+          "avatar": "",
+          "proxy": "dsfdsf:212",
+          "role": "ADMIN",
+          "fans": 0
+        },
+        {
+          "uid": "1774437638895_0",
+          "name": "Trang Page,Trang Fan Page,Trang Business",
+          "bio": "Chào mừng bạn,Welcome to my page,Cảm ơn bạn đã theo dõi",
+          "token": "",
+          "cookie": "",
+          "avatar": "",
+          "proxy": "dsfdsf:212",
+          "role": "ADMIN",
+          "fans": 0
+        },
+        {
+          "uid": "1774437903136_0",
+          "name": "Trang Page,Trang Fan Page,Trang Business",
+          "bio": "Chào mừng bạn,Welcome to my page,Cảm ơn bạn đã theo dõi",
+          "token": "",
+          "cookie": "",
+          "avatar": "",
+          "proxy": "dsfdsf:212",
+          "role": "ADMIN",
+          "fans": 0
+        },
+        {
+          "uid": "100038524891021_1774438130889_0",
+          "name": "Trang Page,Trang Fan Page,Trang Business",
+          "bio": "Chào mừng bạn,Welcome to my page,Cảm ơn bạn đã theo dõi",
+          "token": "",
+          "cookie": "",
+          "avatar": "",
+          "proxy": "dsfdsf:212",
+          "role": "ADMIN",
+          "fans": 0
+        }
+      ],
+      "proxy": "dsfdsf:212"
+    },
+    "100091234567890": {
+      "mail": "minh.phuc@gmail.com",
+      "pass": "pass789",
+      "2fa": "",
+      "name": "Minh Phúc Test",
+      "uid": "100091234567890",
+      "letter": "M",
+      "token": "EAA9riq6lpaZAAA1qr4nopbf2mwa5sorhwkBx4xZB8e0pb8ehgj",
+      "cookie": "sb=wabnxyuh; xs=k7bnc0ffsgn2dmcw2m9zxst7; c_user=652622770692397; fr=yhag8t7lsvw3b8gq8ca83551o3a35j",
+      "status": "✘ Hết hạn",
+      "status_color": "#ef4444",
+      "pages": [
+        {
+          "uid": "1774413420971_0",
+          "name": "Trang Page,Trang Fan Page,Trang Business",
+          "bio": "Chào mừng bạn,Welcome to my page,Cảm ơn bạn đã theo dõi",
+          "token": "",
+          "cookie": "",
+          "avatar": "",
+          "proxy": "dsfdsf:212",
+          "role": "ADMIN",
+          "fans": 0
+        },
+        {
+          "uid": "1774420402637_0",
+          "name": "Trang Page,Trang Fan Page,Trang Business",
+          "bio": "Chào mừng bạn,Welcome to my page,Cảm ơn bạn đã theo dõi",
+          "token": "",
+          "cookie": "",
+          "avatar": "",
+          "proxy": "dsfdsf:212",
+          "role": "ADMIN",
+          "fans": 0
+        },
+        {
+          "uid": "1774437620117_0",
+          "name": "Trang Page,Trang Fan Page,Trang Business",
+          "bio": "Chào mừng bạn,Welcome to my page,Cảm ơn bạn đã theo dõi",
+          "token": "",
+          "cookie": "",
+          "avatar": "",
+          "proxy": "dsfdsf:212",
+          "role": "ADMIN",
+          "fans": 0
+        },
+        {
+          "uid": "1774437633388_0",
+          "name": "Trang Page,Trang Fan Page,Trang Business",
+          "bio": "Chào mừng bạn,Welcome to my page,Cảm ơn bạn đã theo dõi",
+          "token": "",
+          "cookie": "",
+          "avatar": "",
+          "proxy": "dsfdsf:212",
+          "role": "ADMIN",
+          "fans": 0
+        },
+        {
+          "uid": "1774437638896_0",
+          "name": "Trang Page,Trang Fan Page,Trang Business",
+          "bio": "Chào mừng bạn,Welcome to my page,Cảm ơn bạn đã theo dõi",
+          "token": "",
+          "cookie": "",
+          "avatar": "",
+          "proxy": "dsfdsf:212",
+          "role": "ADMIN",
+          "fans": 0
+        },
+        {
+          "uid": "1774437903136_0",
+          "name": "Trang Page,Trang Fan Page,Trang Business",
+          "bio": "Chào mừng bạn,Welcome to my page,Cảm ơn bạn đã theo dõi",
+          "token": "",
+          "cookie": "",
+          "avatar": "",
+          "proxy": "dsfdsf:212",
+          "role": "ADMIN",
+          "fans": 0
+        },
+        {
+          "uid": "100091234567890_1774438130890_0",
+          "name": "Trang Page,Trang Fan Page,Trang Business",
+          "bio": "Chào mừng bạn,Welcome to my page,Cảm ơn bạn đã theo dõi",
+          "token": "",
+          "cookie": "",
+          "avatar": "",
+          "proxy": "dsfdsf:212",
+          "role": "ADMIN",
+          "fans": 0
+        }
+      ],
+      "proxy": "dsfdsf:212"
+    },
+    "100004592325553": {
+      "mail": "100004592325553",
+      "pass": "abc123@@@",
+      "2fa": "D24S35QOO3LOC726PZRVGLFJORSLLKP5",
+      "proxy": "fdgDFG:323",
+      "name": "100004592325553",
+      "uid": "100004592325553",
+      "letter": "1",
+      "token": "EAAD6V7os0gcBRIr77kvEsBwjDVniDGUEwlJY9cPgJRcYRMwnZAqda7eslpZAN71G9XY24nTRMVNitasZAWg5DXeLWEE5Q8t5Gr72foZAe3T56EZBKj8UBYB3jFsQ152DZCzLG03F4zfbhTWQ1xz7ZAS42DInbxlehlBumv0TQZC0oObiUZCRsynATkf2zp8VfIZCQAsBFQIk1b2wZDZD",
+      "cookie": "c_user=100004592325553; xs=10:pkGZCtocYrsdlw:2:1774380286:-1:-1; fr=0w3XYNdt37Rk36ICJ.AWclJf_hkpGany3Cw_-gUeSuzcU_aVni3EurU-p95raLUQBBRSQ.BpwuT-..AAA.0.0.BpwuT-.AWf7jMHH1jzzJWSwymYmpRAXGbE; datr=_uTCaePp3XklvWJql7FHeCj3",
+      "status": "✔ Active",
+      "status_color": "#10b981",
+      "pages": [
+        {
+          "uid": "100004592325553_1774438152708_0",
+          "name": "Trang Page,Trang Fan Page,Trang Business",
+          "bio": "Chào mừng bạn,Welcome to my page,Cảm ơn bạn đã theo dõi",
+          "token": "",
+          "cookie": "",
+          "avatar": "",
+          "proxy": "fdgDFG:323",
+          "role": "ADMIN",
+          "fans": 0
+        }
+      ]
+    },
+    "100003822692509": {
+      "mail": "100003822692509",
+      "pass": "abc123@@a",
+      "2fa": "6QWI SZ3Q 7SYM KMOZ LL55 PSFO CDNV 6XKT",
+      "proxy": "fdgDFG:323",
+      "name": "100003822692509",
+      "uid": "100003822692509",
+      "letter": "1",
+      "token": "EAAD6V7os0gcBRPi70H0ZBhL7Ohme8Nse2bNQQGZAFTpJUNGL0kM2s3fszqXVqZAqydHAAbSEPROwoWogLmokqb7DOZB9d95TJhHSdxv1vzsIaSQRAgwkYhyKdtF8TTovTQzwkxkkNDRLZCl69F7FO2SyrNuLpHZBZBZCZBTFTF92HscFiJQDeC0J8DSJrOsdrgwfM6mVMcM4aOgZDZD",
+      "cookie": "c_user=100003822692509; xs=4:mKpvyTMRho_-uQ:2:1774380287:-1:-1; fr=0fHsJZdlhXqW7l7Kn.AWcIe446xAVuF3i3SkWGYNE03hqSH60uoaJ9NQ7mjmKNlHXqWnE.BpwuT_..AAA.0.0.BpwuT_.AWckJBTP74-xotlVwLrDc-1vIwo; datr=_-TCab2y7-LTjOGtefuN_8cg",
+      "status": "✔ Active",
+      "status_color": "#10b981",
+      "pages": [
+        {
+          "uid": "100003822692509_1774438152708_0",
+          "name": "Trang Page,Trang Fan Page,Trang Business",
+          "bio": "Chào mừng bạn,Welcome to my page,Cảm ơn bạn đã theo dõi",
+          "token": "",
+          "cookie": "",
+          "avatar": "",
+          "proxy": "fdgDFG:323",
+          "role": "ADMIN",
+          "fans": 0
+        }
+      ]
+    },
+    "220271546197819": {
+      "mail": "dsaf",
+      "pass": "sdsdf",
+      "2fa": "sdfsd",
+      "proxy": "fdsfdsfsd",
+      "name": "Dsaf",
+      "uid": "220271546197819",
+      "letter": "D",
+      "token": "",
+      "cookie": "",
+      "status": "✘ Chưa login",
+      "status_color": "#ef4444",
+      "pages": []
+    },
+    "100009614193964": {
+      "mail": "100009614193964",
+      "pass": "Bao2006@",
+      "2fa": "IQ45 S2HX H4BY CZNS K3RA DPRO 635I 3BOK",
+      "proxy": "",
+      "name": "Nor SY",
+      "uid": "100009614193964",
+      "letter": "1",
+      "token": "EAAD6V7os0gcBRMyONNwSTd25ZAujTLyXCalmDpH1jbikZCChhcFpapZBWVtNIcEsJpeh0c0uHtLMR7xavBJ6AzZBsq7nnxwfccTGVFZBysZA4HXrF77ZBKgEO2h59yuR2jtspZAonJ7bk1y86sqLJK0gRGVgyn4FS5Y3icQQrWdNSq6Iu9SUn0ezMkOZBznzeyKqs8Hvg0WZCgAwZDZD",
+      "cookie": "c_user=100009614193964; xs=22:caTQro-eTabM-Q:2:1775377703:-1:-1; fr=0qwEpwMsmXivGsX6d.AWc2b4eY0Jop7aJUqoV5GJQW6hi0G0oTydFm2mW51K2RhkstVcY.Bp0h0m..AAA.0.0.Bp0h0m.AWdJSuh_JYzNeOqV43s2jtCNP84; datr=Jh3SaQPMABaUe_lLYNcrO03-",
+      "status": "✔ Active",
+      "status_color": "#10b981",
+      "pages": [],
+      "avatar": "https://scontent.fsgn2-9.fna.fbcdn.net/v/t39.30808-1/461657909_3687238114939959_8414399713421993270_n.jpg?stp=c4.0.374.374a_dst-jpg_s200x200_tt6&_nc_cat=103&ccb=1-7&_nc_sid=28885b&_nc_ohc=U09yMAs7O-QQ7kNvwFCM5tZ&_nc_oc=AdqDDOTK61sv2iN3PnnNwIPMF2iCcDGx2oedXTcwlvxstDMrpsH6X3Ham_v_Zefx7Ug&_nc_ad=z-m&_nc_cid=0&_nc_zt=24&_nc_ht=scontent.fsgn2-9.fna&_nc_gid=DoqOBIkLySeg5zKxBYiX2g&_nc_ss=7a32e&oh=00_Af2VFBO8HLjFyvLmONqh_ygz2mZNYETJhzcayQU65VHQWw&oe=69D7F6A8"
+    },
+    "100021414726092": {
+      "mail": "100021414726092",
+      "pass": "abc123@@@@@",
+      "2fa": "P45S TQFL SDPX Z3TC X6B6 UX2Q MDTS ZMTF",
+      "proxy": "",
+      "name": "Võ Lân",
+      "uid": "100021414726092",
+      "letter": "1",
+      "token": "EAAD6V7os0gcBRHZB0c4unVdyqrfzw8ylB4LNULa7RIBWc6UKFpUKTHZAopAoJhCZBG3GRmkHPRAMEl7rlDjIe9yayzzniBxJQ2FJUTlem3R6HMEntkTdivgh6Yq0CtlZCH4W1ehGHPfgJUEWLuHZBmCgZBzE5ERPVNFvxPHBjLbyyaCfA5oU5Ij3OZAHwgu3wFsZC8vDzgZDZD",
+      "status": "✔ Active",
+      "status_color": "#10b981",
+      "pages": [
+        {
+          "uid": "61588475505251",
+          "page_id_graph": "1012736811923113",
+          "name": "Hà Linh",
+          "token": "EAAD6V7os0gcBRJIfWj0aPtfdvgH35oDZApxb1H3Tz4jcsA343nV0Gjxjl7uqSfkUf7WJBwUc3ZBdu3lJzZCmDRAIbQpYNcT4nscPaGk6wsds1U30JN8Ohh0tBRY1O3rc74wkCmVaasCw2l812ti9DLtASrC0ZBeZCNWGWeTKVT50GFtbbdFnMZBk7SyptJoYGnjm9U7wQPBNTJAL5cz1gkCJpbZBAZDZD",
+          "cookie": "c_user=100021414726092; xs=29:Zs7S8iM9EJud_g:2:1776354619:-1:-1; fr=0kt2DXJaaYoyVE0Mn.AWdxnG-pGWRVCrWtPjmLrbuQnC3xmfFZxc3-mMLp8qfBVRv3UJU.Bp4QU7..AAA.0.0.Bp4QU7.AWceR8mZPSkp7u455DaJ1USrhOA; datr=OwXhabVT83AkiKzaOatNlbY6;ps_l=1;ps_n=1;wd=1920x919;i_user=61588475505251;",
+          "role": "ADMIN",
+          "fans": 0,
+          "avatar": "https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-1/643342524_122100703725282516_8344022639636239489_n.png?stp=dst-png_s200x200&_nc_cat=108&ccb=1-7&_nc_sid=f907e8&_nc_ohc=Gt8lUhYIX8YQ7kNvwGGWMPw&_nc_oc=AdqbVq8ASGwjCBDCz9m0a7b93uAZNnJJ0jgHrFjigELfq7fwWHUGhbtlA3pJEI9s4-k&_nc_ad=z-m&_nc_cid=0&_nc_zt=24&_nc_ht=scontent.fsgn2-7.fna&_nc_gid=rmdrRw3-kvCpYqo6WAb1Tw&_nc_ss=7a32e&oh=00_Af2puvPbhElT3r0ZS1KP9UhVQHjYk3fnWFqCPYjshksc4A&oe=69E6C43F",
+          "proxy": ""
+        },
+        {
+          "uid": "61588599178493",
+          "page_id_graph": "969685009569437",
+          "name": "Shinsad",
+          "token": "EAAD6V7os0gcBRCcsnTfwTOAu88CLogLCFIJ3g0H4e10ZCOyncsjEtd11HTHdFQVgnQX9PVUfZC3kw4EFVOHeqlJ6avRaqW2D0lvwAKLEvtwPC9rOiY1wl619KbVtRpZCrSjdZAGG5B9A2b2Nr5d3fX3A9Kn1SYtiFxZAIXyUuZC9zbptARpor9MCAsPUODN0DzZCucOBCe3Ei7Bbje1phAB9gPL3wZDZD",
+          "cookie": "c_user=100021414726092; xs=29:Zs7S8iM9EJud_g:2:1776354619:-1:-1; fr=0kt2DXJaaYoyVE0Mn.AWdxnG-pGWRVCrWtPjmLrbuQnC3xmfFZxc3-mMLp8qfBVRv3UJU.Bp4QU7..AAA.0.0.Bp4QU7.AWceR8mZPSkp7u455DaJ1USrhOA; datr=OwXhabVT83AkiKzaOatNlbY6;ps_l=1;ps_n=1;wd=1920x919;i_user=61588599178493;",
+          "role": "ADMIN",
+          "fans": 0,
+          "avatar": "https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-1/639763451_122095281081286639_2586862240294816362_n.png?stp=dst-png_s200x200&_nc_cat=100&ccb=1-7&_nc_sid=f907e8&_nc_ohc=l-sSRxqcgEIQ7kNvwFEZe1b&_nc_oc=AdonOc6NAYM3PBEzyovSnoBTjHieIY1ZbJUFHr9qgHSWQDADNBc1d3gdngoFJGuTFxg&_nc_ad=z-m&_nc_cid=0&_nc_zt=24&_nc_ht=scontent.fsgn2-7.fna&_nc_gid=vkO0R1l9M3sl8U-HZlJGWQ&_nc_ss=7a32e&oh=00_Af0T7NwL03G25Q_Ck71ffdLWDuSdlZDgMRX00-881JTJQg&oe=69E6CD9C",
+          "proxy": ""
+        }
+      ],
+      "avatar": "https://scontent.fsgn2-8.fna.fbcdn.net/v/t1.30497-1/453178253_471506465671661_2781666950760530985_n.png?stp=dst-png_s200x200&_nc_cat=1&ccb=1-7&_nc_sid=207b4a&_nc_ohc=LyaBCQe282UQ7kNvwEnVO1B&_nc_oc=AdpFYn3xUyAmrh1kFPsmBT3iuITuro5flEYYY9jGZd5TGddzTzdHDJdb4iSXBECzKuU&_nc_ad=z-m&_nc_cid=0&_nc_zt=24&_nc_ht=scontent.fsgn2-8.fna&_nc_ss=7a32e&oh=00_Af3ijfdgBpYENxAursqawnx_n51kIJ6RQCf3ho7IkjO8gQ&oe=6A0868FA",
+      "cookie": "c_user=100021414726092; xs=29:Zs7S8iM9EJud_g:2:1776354619:-1:-1; fr=0kt2DXJaaYoyVE0Mn.AWdxnG-pGWRVCrWtPjmLrbuQnC3xmfFZxc3-mMLp8qfBVRv3UJU.Bp4QU7..AAA.0.0.Bp4QU7.AWceR8mZPSkp7u455DaJ1USrhOA; datr=OwXhabVT83AkiKzaOatNlbY6"
+    },
+    "100002785140483": {
+      "mail": "100002785140483",
+      "pass": "datngu123@@",
+      "2fa": "POQC FV3P SGCN R22A 3ROY XR6F YOGE J2W4",
+      "proxy": "",
+      "name": "Kate Mitchel Lambert",
+      "uid": "100002785140483",
+      "letter": "1",
+      "token": "EAAD6V7os0gcBRBfZBd2FswZAFkZCllAsoJFyzm1JuTl2fvIygoZCM6lWW8R5N81GtQgd51jFCn374ADbGZBXjsDZCqzQGUx2WpRZAZCXHZC9t7r0PJ1s5sCfsNY9DXQTcsv7e0LfZCOpnBaO3VPqdcKKZAY576Wuejup8KpIoh03geKDcDeMla5mnVZBMOmbJfK8ZASWGP1NisGcutgZDZD",
+      "cookie": "c_user=100002785140483; xs=15:qCAK7fDRlZ0hqA:2:1775476766:-1:-1; fr=0NeiIsaevnHkfU5HG.AWdu6WM5un_--l7ISW8VFRQnWlfAzsfn-hu224p7YDDC8CPtUNA.Bp06Ad..AAA.0.0.Bp06Ad.AWfjZvD_ac0PKIbGiyaV47VC0DI; datr=HaDTaSc-7O_v8LtAhssX95QG",
+      "status": "✔ Active",
+      "status_color": "#10b981",
+      "pages": [],
+      "avatar": "https://scontent.fsgn2-3.fna.fbcdn.net/v/t39.30808-1/448134459_6823359021100202_9000046988542792808_n.jpg?stp=c123.28.354.354a_dst-jpg_s200x200_tt6&_nc_cat=107&ccb=1-7&_nc_sid=28885b&_nc_ohc=_klqGOTAMRwQ7kNvwEyp9_W&_nc_oc=AdpVWFSNFhG8pBYAQ3_xiSoUxqlgR3lDaFgsIpFwrJU6tg5yv0b9omMLLiZLQaPRxMc&_nc_ad=z-m&_nc_cid=0&_nc_zt=24&_nc_ht=scontent.fsgn2-3.fna&_nc_gid=_8_PY1hXaLINeo5Pkul55w&_nc_ss=7a32e&oh=00_Af2QL9D9ff25FzFBdA4V_pCjXV_Vn93VTSnDGspKpVwX_Q&oe=69D960F8"
+    },
+    "100002453876691": {
+      "mail": "100002453876691",
+      "pass": "datngu123@@",
+      "2fa": "7XAM 5DYF MKDO OPOR H3PB X5LI YQQ4 FHYD",
+      "proxy": "",
+      "name": "100002453876691",
+      "uid": "100002453876691",
+      "letter": "1",
+      "token": "EAAD6V7os0gcBRNu3TTu1JCmFTBfhKeUxBbM1Ls96LuZAP8DTHCroQFNFcQZB6JSSOfOC77zHg4GsU2CjWvzbQCNh8SV3MimyJtwwynRGA0BClZA0NqgbbdzRCqTCdPNOiVLwle2ACAOxeuwQu9uxp6CARDCTNAvIUcmhTV4vcNRkkrVGyRNIuf2PlnQfqlFmlCzcwZDZD",
+      "cookie": "c_user=100002453876691; xs=34:MNA7L9AvzNJ_OA:2:1775476766:-1:-1; fr=0Gd55p45kfNakzUia.AWdMSsUR6dk_wKebV5XFB6xXFXvoO95ynkTPqWMdF9tngzFK2GE.Bp06Ae..AAA.0.0.Bp06Ae.AWd2mKDX6KH9oBz4g1PfMCnXe3A; datr=HqDTaSxv5mx3KTFoQrajW-MN",
+      "status": "✔ Active",
+      "status_color": "#10b981",
+      "pages": []
+    },
+    "100023046907248": {
+      "mail": "100023046907248",
+      "pass": "datngu123@@",
+      "2fa": "ALCX 6RPW QBQG MOUN IHKE N42S TJYS SXZT",
+      "proxy": "",
+      "name": "100023046907248",
+      "uid": "100023046907248",
+      "letter": "1",
+      "token": "EAAD6V7os0gcBRHANroXQ4E4sNDNeAUoYaBNPiqZBIITYwrBJXRGYPoWicYzoFZCzaANU3ZCUhz4xAzppSpcYtqPJrfiRz9zu8v5CVjiGaTgKj0cVcvceQbQDrQ7GrZAETI9bDX9MWU3xUNeIoSaJZAoSBmf1ghuysN3Bi6MZB99ZC0tXAM9wZAolnthbCEPykh6KrSKwYVpaPgZDZD",
+      "cookie": "c_user=100023046907248; xs=15:It5DvewFJLGxGg:2:1775476766:-1:-1; fr=0sPqzurQHDUMUMQyU.AWcMoZXN3Dyo74RqP6RU0RrPOGRd88qUG9aXkajC_dhyy1R_6CA.Bp06Ae..AAA.0.0.Bp06Ae.AWdJS6Mr2cqNfqMiqHJ0a8RrINQ; datr=HqDTabZiObM2ahcIvS_JCmIJ",
+      "status": "✔ Active",
+      "status_color": "#10b981",
+      "pages": []
+    },
+    "100002829292385": {
+      "mail": "100002829292385",
+      "pass": "datngu123@@",
+      "2fa": "D6BW ORL7 NWKY MZOY CAML 2ORF CC5Z 7E6X",
+      "proxy": "",
+      "name": "100002829292385",
+      "uid": "100002829292385",
+      "letter": "1",
+      "token": "EAAD6V7os0gcBRDYEsdZCDogNQBCrLV2F1995T0Uwbx5yRjserHVuCyMKjLMtUU2zLxxJjmqA1tjSZA9WK1ZB9kY0MClvlPGCYelWetfFGfCu3GjYpIKKgbnnLicE2k3oDGj4JeEVqIdh8KQe7UztqEkUQAMTyVL7sxzqnYVK9yYvLSoSuakZBDth0cD2x6FEOlMLYAZDZD",
+      "cookie": "c_user=100002829292385; xs=14:BdgjSTvVx2OkIg:2:1775476775:-1:-1; fr=0VvJebwwQVIECIflA.AWcv21eHi9vtbtvyDMviFhQobmzMoVhcaJwaKlBEHKkjuDdrfYw.Bp06An..AAA.0.0.Bp06An.AWfNG-D_xj2GMpIrGoDbghxKvjI; datr=J6DTaXDTDwEEv3dnwqoNg4GL",
+      "status": "✔ Active",
+      "status_color": "#10b981",
+      "pages": []
+    },
+    "100002122703300": {
+      "mail": "100002122703300",
+      "pass": "datngu123@@",
+      "2fa": "HG3P IW5U VWPW XYTI QR3G 2FNC 4ABU 44WJ",
+      "proxy": "",
+      "name": "100002122703300",
+      "uid": "100002122703300",
+      "letter": "1",
+      "token": "EAAD6V7os0gcBRCyZAqCcZBiakg4CuBJZBHNeRMwW6Ioly0txdyCfmWjyo429ihjMiaFMbeK9ig2XpFO8FEymzuqYDEh6jFSrBxjE5IMZAcFzeGh3RHrZAZBXhVkn2T1mH0Tz4LZC5u2KYzPLg6TUH5olCSLc3ZAeZCbhpMOarR294RapJH9noEHarTJozaIS7cqspvZAhiDfXSZBgZDZD",
+      "cookie": "c_user=100002122703300; xs=40:zZHq0Gg9Wt7oNg:2:1775476779:-1:-1; fr=02jgtZ4g7UVDdUUqm.AWcN3r_eyLxEO-n_hI3XG6pYl71sYSdAlwUlFxlfUplxx-udKJQ.Bp06Ar..AAA.0.0.Bp06Ar.AWfOa3jYKv2Nyp2LuZA2ZG3XBxQ; datr=K6DTaZniXH9O4KVGw4S1Uzgz",
+      "status": "✔ Active",
+      "status_color": "#10b981",
+      "pages": []
+    },
+    "100005649934250": {
+      "mail": "100005649934250",
+      "pass": "datngu123@@",
+      "2fa": "G434 VGYI VCE6 BIUO XATR 7X7X HU6G NHA5",
+      "proxy": "",
+      "name": "100005649934250",
+      "uid": "100005649934250",
+      "letter": "1",
+      "token": "EAAD6V7os0gcBRMNSQXDqbavaC2NbyDCc1CTfj4rZBoMdzyl7tvvzBOjOQ2KUVRezvpEZAVaLcWkqimj25VDJYCfEhzkhIJSQI0ZCoI5NaRABcH4V4IGO1XMwlscXveqTZASlZCZCPZBIwdMKSpnBovcL7yV9FBi0sbePNazZAz2JGEaW2lQkZAjXONVhPr3CJnjZAif1uxhwZAmDwZDZD",
+      "cookie": "c_user=100005649934250; xs=28:p6kSPmwjHx5avw:2:1775476784:-1:-1; fr=0Fm0FtbqLR6wtivXS.AWc5Phkf8Ciae4IJ-XgAsrsAML8KcRJuESj2f2No4XPWHxa-pWs.Bp06Aw..AAA.0.0.Bp06Aw.AWcdYwqjrrdBYrFJP6T4KL4VVhM; datr=MKDTaSYBrjg6kkr_trbOHPu-",
+      "status": "✔ Active",
+      "status_color": "#10b981",
+      "pages": []
+    },
+    "100005375892537": {
+      "mail": "100005375892537",
+      "pass": "datngu123@",
+      "2fa": "4H5D OTZC AUZY QFBM 6QWV GX3D B7QN 4O5A",
+      "proxy": "",
+      "name": "100005375892537",
+      "uid": "100005375892537",
+      "letter": "1",
+      "token": "EAAD6V7os0gcBRNO81ZAE5b39BT0wDaVAHV7uLh1ZAYGKWFOuM4yFoDUe7QZB33eNxJLs4XH13oQui0nM3iRZCtO4am4BHVruR6NJYkkEv25ZChrNqddcmn0JQQM7P88xYvAzqByWzz77MsYek6nEp8weZBt22u7HucaSTy0AOIKrfQXL0vQdQgXQtxPV4vGMrdAtcKgcN2zwZDZD",
+      "cookie": "c_user=100005375892537; xs=13:9CYxmty541CzVg:2:1775476788:-1:-1; fr=0VeOnga9mgnJM5pvB.AWcDepvjxi8e-mGQZdkMkMeMBWFYeVV3VJb-Hh9WqCPu2R-TLKU.Bp06A0..AAA.0.0.Bp06A0.AWeyGqiltpBhp_i4Red2eB9GemI; datr=NKDTaUedZQ2aX5eP5Wx1UyDX",
+      "status": "✔ Active",
+      "status_color": "#10b981",
+      "pages": []
+    },
+    "100001829409145": {
+      "mail": "100001829409145",
+      "pass": "datngu123@@",
+      "2fa": "347A VBJ4 SY5Z BFGN P2LI TTQM DJKV Q44I",
+      "proxy": "",
+      "name": "100001829409145",
+      "uid": "100001829409145",
+      "letter": "1",
+      "token": "EAAD6V7os0gcBRAYiI2ztFt8kGISaVSHRSKFcPwvC02bz0yhstY7bntgfdIM0wDUFhO7zDxL3sfAOTPL5dFVP6147xk8OmEq8DnF3E86PL99RFUcR3Mlkzv1zWyw5iQBSL8C5AUjo1dvvdCgKOgZAwQj9ZAVVwRZB1gNxOPnRjGdoyiZBAcWhAPAkx5m0EinUPkZCfTYyG8QZDZD",
+      "cookie": "c_user=100001829409145; xs=5:xbhu832RlmKNfQ:2:1775476796:-1:-1; fr=0cnCe4OYh1Qv09QLC.AWd6N4qWHGlPUswz13GIkaMkqcAUw5x4vLUSa72nDddbnrX1K_Y.Bp06A8..AAA.0.0.Bp06A8.AWdwPE_ZUQhcE76o_ok2A4oWINk; datr=PKDTaW_XhSIiQN_7OF7Qq53A",
+      "status": "✔ Active",
+      "status_color": "#10b981",
+      "pages": []
+    },
+    "100003813121830": {
+      "mail": "100003813121830",
+      "pass": "datngu123@@",
+      "2fa": "7BCK MQAL 3WXJ G6HW RVCW YJZM P3T5 EJZF",
+      "proxy": "",
+      "name": "100003813121830",
+      "uid": "100003813121830",
+      "letter": "1",
+      "token": "EAAD6V7os0gcBRBLrBo9h6X056bZA2AiojNZCFFv6ncYlV1mcj8u4ZBliDeXdVjtZA5V0dhgZAZABrtvn8xnAEwp7WaZBxWcdkGpsKZAWxwzJH9rs9vzDFPZBjKuq3Ob5YwWWYP4fTHXUjgEemnFjxNrhUqpatxGWgEkUFRg2wfZCsY7Bfb9y9LcwQaNCdXaZBfkjlTDZBSuCWAZDZD",
+      "cookie": "c_user=100003813121830; xs=37:mlCLbt95LJm3GA:2:1775476798:-1:-1; fr=0Utnic4p1MkTUJcXN.AWdY3SX8SDwI8E5NbmPk2KSSqkMTE3xlWl9RgMloA2maNMJ1h9U.Bp06A-..AAA.0.0.Bp06A-.AWe7TOED5VIne5jvv1Unk42HHwg; datr=PqDTaVFuCMb0XcDJX2TzecMD",
+      "status": "✔ Active",
+      "status_color": "#10b981",
+      "pages": []
+    }
+  }
+}

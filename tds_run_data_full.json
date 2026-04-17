@@ -1,0 +1,50 @@
+{
+  "settings": {
+    "api_key": "sdf",
+    "delay_short": 5,
+    "delay_long": 60,
+    "delay_after_tasks": 5,
+    "stop_after_tasks": 100
+  },
+  "tasks": [
+    {
+      "type_job": "facebook_reaction",
+      "display_name": "Like VIP",
+      "delay_min": 1,
+      "delay_max": 1,
+      "count": 1
+    },
+    {
+      "type_job": "facebook_reaction2",
+      "display_name": "Like Thường",
+      "delay_min": 1,
+      "delay_max": 1,
+      "count": 1
+    },
+    {
+      "type_job": "facebook_follow",
+      "display_name": "Theo Dõi",
+      "delay_min": 1,
+      "delay_max": 1,
+      "count": 1
+    },
+    {
+      "type_job": "facebook_share",
+      "display_name": "Share",
+      "delay_min": 1,
+      "delay_max": 1,
+      "count": 1
+    }
+  ],
+  "accounts": [
+    {
+      "tds_user": "ngEdzjx0Ne",
+      "tds_pass": "4NFUXsZWI21c",
+      "tds_token": "TDS0nI0IXZ2V2ciojIyVmdlNnIsISZOBDeqpHZFdmbiojIyV2c1Jye",
+      "fb_uid": "61588475505251",
+      "fb_cookie": "c_user=100021414726092; xs=29:Zs7S8iM9EJud_g:2:1776354619:-1:-1; fr=0kt2DXJaaYoyVE0Mn.AWdxnG-pGWRVCrWtPjmLrbuQnC3xmfFZxc3-mMLp8qfBVRv3UJU.Bp4QU7..AAA.0.0.Bp4QU7.AWceR8mZPSkp7u455DaJ1USrhOA; datr=OwXhabVT83AkiKzaOatNlbY6;ps_l=1;ps_n=1;wd=1920x919;i_user=61588475505251;",
+      "fb_proxy": "",
+      "fb_token": "EAAD6V7os0gcBRJIfWj0aPtfdvgH35oDZApxb1H3Tz4jcsA343nV0Gjxjl7uqSfkUf7WJBwUc3ZBdu3lJzZCmDRAIbQpYNcT4nscPaGk6wsds1U30JN8Ohh0tBRY1O3rc74wkCmVaasCw2l812ti9DLtASrC0ZBeZCNWGWeTKVT50GFtbbdFnMZBk7SyptJoYGnjm9U7wQPBNTJAL5cz1gkCJpbZBAZDZD"
+    }
+  ]
+}

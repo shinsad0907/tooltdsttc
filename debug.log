@@ -1,0 +1,20 @@
+Starting app
+QApplication created
+arrows created
+Palette set
+MainWindow created
+Window shown
+ERROR: 0
+Traceback (most recent call last):
+  File "c:\Users\pc\Desktop\shin\tooltdsttc\main.py", line 5456, in main
+    sys.exit(app.exec_())
+    ~~~~~~~~^^^^^^^^^^^^^
+SystemExit: 0
+ating pages dict
+pages dict created
+adding pages to stack
+pages added
+statusbar
+timer
+navigate
+MainWindow init DONE
