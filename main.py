@@ -2999,7 +2999,7 @@ class TTCRunPage(QWidget):
             
             for col, (label, key, suffix) in enumerate([("Min (s)", "delay_min", "s"), ("Max (s)", "delay_max", "s"), ("Số lần", "count", "")]):
                 lbl = QLabel(label); lbl.setStyleSheet("color:#8b9aaf;font-size:9px;font-family:Consolas;background:transparent;")
-                spin = make_spinbox(task_cfg.get(key, self.AVAILABLE_TASKS[task_name].get(key, 1)), 1, 600 if "delay" in key else 100, suffix)
+                spin = make_spinbox(task_cfg.get(key, self.AVAILABLE_TASKS[task_name].get(key, 1)), 1, 600 if "delay" in key else 10000, suffix)
                 spin.setMaximumWidth(120); spin.setMinimumHeight(28)
                 spins[key] = spin
                 settings_lay.addWidget(lbl, 0, col)
@@ -3029,7 +3029,7 @@ class TTCRunPage(QWidget):
             ("Delay Ngắn",       "delay_short",       5,   "s", 1,   300, "#4d8fff"),
             ("Delay Dài",        "delay_long",         60,  "s", 10,  600, "#a78bfa"),
             ("Sau N Task",       "delay_after_tasks",  5,   "",  1,   50,  "#f59e0b"),
-            ("Dừng Sau",         "stop_after_tasks",   100, "",  1,   1000,"#ef4444"),
+            ("Dừng Sau",         "stop_after_tasks",   100, "",  1,   10000,"#ef4444"),
         ]:
             spin_card = QFrame(); spin_card.setStyleSheet("background:#0d1629;border:1px solid #1e3050;border-radius:8px;")
             spin_card_lay = QVBoxLayout(spin_card); spin_card_lay.setContentsMargins(10,8,10,8); spin_card_lay.setSpacing(4)
